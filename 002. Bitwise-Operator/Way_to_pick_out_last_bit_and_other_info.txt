@@ -1,0 +1,47 @@
+
+
+
+<< - left shift (multiply via 2)
+>> - right shift (divide by 2)
+
+| - or (any 1 -> 1)
+       (all 0 -> 0)
+
+
+& - not (any 0 -> 0)
+        (all 1 -> 1)
+
+
+
+
+//      To check ith bit is a set bit or not :
+
+            mask = 1 << i;
+            bool_set = (mask & n);
+
+
+
+
+//      To remove the last set bit :
+
+            N = N & (N-1);
+
+
+
+
+//      To check power of 2:
+
+           if(n&n-1 == 0)
+                yes;
+
+
+//      To clear ith bit :
+
+            int mask = ~(1<<i);
+            a = a & mask;
+
+
+//      To set ith bit of num :
+
+            mask = (1<<i)
+
